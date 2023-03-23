@@ -1,0 +1,153 @@
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  column-gap: 50px;
+
+  @media screen and (max-width: 990px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+}
+
+.footer-container__left{
+   display: flex;
+   column-gap: 5px;
+
+   @media screen and (max-width: 800px) {
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+  }
+}
+
+.footer-header-logo{
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-header-logo__item{
+  width: 113px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-container__left__txt{
+  max-width: 400px;
+  font-family: "acumin-pro-condensed";
+  font-size: 19px;
+  color: var(--footer-txt-color);
+
+  @media screen and (max-width: 560px) {
+    text-align: center;
+  }
+}
+
+.footer-container__right{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 25px;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (max-width: 560px) {
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.footer-container__right__ul{
+  list-style: none;
+  padding: 0px;
+}
+
+.footer-container__right__anchor{
+  text-decoration: none;
+  font-family: "Krana Fat";
+  font-size: 19px;
+  color: var(--footer-txt-color);
+  font-weight: bold;
+}
+
+.footer-container__right__txt{
+  font-family: "acumin-pro-condensed";
+  font-size: 19px;
+  color: var(--footer-txt-color);
+  max-width: 210px;
+  margin: 0px;
+
+}
+
+.footer-container__right__p4{
+  display: flex;
+  gap: 25px;
+  width: 25px;
+  height: auto;
+}
+
+.footer-icon{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+
+.footer-last-part{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0px 0px;
+}
+
+.footer-img{
+  position: absolute;
+
+  @media screen and (max-width: 700px) {
+    height: 18px;
+  }
+}
+
+.footer-last-part__anchor{
+  text-decoration: none;
+  font-family: "Krana Fat";
+  font-size: 19px;
+  color: var(--footer-txt-color);
+  font-weight: bold;
+  position: absolute
+}
+
+@media screen and (max-width: 800px) {
+  .footer-container__right__p1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container__right__p2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container__right__p3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container__right__p4{
+    justify-content: center;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,160 @@
+
+.section-07{
+  margin: 35px 0px;
+}
+
+.section07-bg{
+  //width: 100%;
+  height: 90vh;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section07-bg__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+// .section07-possition{
+//   position: absolute;
+//   top: 11%;
+//   left: 10%;
+
+// }
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--section-07-overlay-color);
+}
+
+.section07-bg__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-07-bellow-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  z-index: 10;
+}
+.section-07-bellow-content__txt{
+  text-align: center;
+  max-width: 430px;
+  line-height: 0.9;
+}
+
+.section-07-heading{
+  font-family: "Mocha Mattari";
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  //color: #FFFFFF;
+
+  @media screen and (max-width: 468px) {
+    font-size: 41px;
+    //padding-inline: 5%;
+  }
+}
+
+.section-07-para{
+  font-family: "acumin-pro-condensed";
+  font-size: 19px;
+
+  @media screen and (max-width: 468px) {
+    //font-size: 41px;
+    padding-inline: 5%;
+    row-gap: 5px;
+  }
+}
+
+
+.section-07-bellow-content__form{
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  justify-items: center;
+  align-items: center;
+  z-index: 10;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    row-gap: 10px; 
+  }
+}
+
+.form{
+  input[type=text], select {
+    //width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    //max-width: 550px;
+    width: 350px;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    cursor: pointer;
+
+    @media screen and (max-width: 398px) {
+      width: 330px;
+    }
+  }
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  column-gap: 15px;
+  cursor: pointer;
+}
+
+.form-btn{
+  text-decoration: none;
+  color: #1f1e1e;
+  padding: 10px 50px;
+  background-color: #ccc;
+  border-radius: 2px;
+  border: 2px solid #ccc;
+  font-family: "Krana Fat";
+  transition: all 0.3s ease-in-out;
+}
+
+.form-btn:hover{
+  background-color: #1f1e1e;
+  //border: 2px solid #a76389;
+  color: #ccc;
+}
+
+.form-txt{
+  font-family: "Krana Fat";
+  font-weight: bold;
+  font-size: 16px;
+  color: #0A0A0A;
+}
+
+.form-sub-txt{
+  font-family: "acumin-pro-condensed";
+  font-size: 16px;
+  color: #0A0A0A;
+  font-weight: bold;
+}
+
+.form-checkbox{
+  font-family: "acumin-pro-condensed";
+  font-size: 16px;
+  color: #0A0A0A;
+}

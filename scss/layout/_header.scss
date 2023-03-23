@@ -1,0 +1,284 @@
+//---Nav full content---//
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content-formate {
+  padding: 0px 42px;
+  // position: fixed;
+  // top: 0;
+}
+
+//----- Header Logo -----//
+
+.header-logo {
+  width: 120px;
+  height: auto;
+}
+
+.header-logo__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+//----- Nav link -----//
+
+.nav-content-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-content__list-ul {
+  display: flex;
+  list-style: none;
+  gap: 41px;
+  padding: 0px;
+}
+
+.nav-content__list-li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-content__anchor {
+  font-family: "Krana Fat", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  font-style: normal;
+  text-align: center;
+  color: var(--nav-content__anchor-color);
+  text-decoration: none;
+  display: flex;
+  //line-height: 14px;
+}
+
+.anchorimg{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+.nav-content__anchor:hover + .anchorimg{
+   opacity: 1;
+}
+
+.nav-content__btn__anchor:hover{
+  text-decoration: underline;
+}
+
+//------ Nav button -----//
+
+.nav-content__btn__anchor {
+  font-family: "acumin-pro-condensed", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  color: var(--nav-content__anchor-color);
+  text-decoration: none;
+}
+
+.nav-content__btn {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-content__btn__logo {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-logo {
+  width: 27px;
+  height: auto;
+}
+
+//-----Responsive nav bar-----//
+
+@media screen and (min-width: 1120px) {
+  .nav-content1 {
+    display: none;
+  }
+}
+
+//--------- MOBILE NAVBAR ------------//
+
+.mobile-navbar-btn {
+  display: none;
+  //background: transparent;
+  cursor: pointer;
+  position: absolute;
+}
+
+.mobile__btn__anchor {
+  font-family: "icomoon", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 64px;
+  height: 45px;
+  color: var(--nav-content__anchor-color);
+  text-align: center;
+}
+
+.mobile-nav-icon {
+  display: inline-block;
+  width: 64px;
+  height: 45px;
+  color: #000;
+  background-color: transparent;
+}
+
+.mobile-nav-icon {
+  display: none;
+}
+
+// media query for mobile navbar //
+
+@media (max-width: 1120px) {
+  .nav-content{
+    display: none;
+  }
+
+  .nav-content1 {
+    height: 137px;
+  }
+  
+
+  .header {
+    position: relative;
+  }
+
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    border: 3px solid transparent;
+    position: absolute;
+    color: #d2b071;
+    top: 48px;
+    right: 35px;
+  }
+
+  // .header-logo{
+  //   position: absolute;
+  // }
+
+  .header-logo{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+  }
+
+  .header-logo1{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+  }
+
+  .header-logo__item1 {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .nav-content-link {
+    //display: none;
+    width: 100%;
+    height: 105vh;
+    background-color: #DE7C00;
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav-content__btn {
+    //display: none;
+    width: 100%;
+    //height: 105vh;
+    background-color: transparent;
+    position: absolute;
+    z-index: 19;
+    top: 70%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav-content__list-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  //Active case
+
+  .active .nav-content__btn {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .nav-content-link {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .header-logo{
+    display: none;
+    transition: all 0.1s linear;
+  }
+
+  // .active .body {
+  //   overflow: hidden;
+  // }
+
+  .nav-content__anchor-sm{
+    font-family: "Krana Fat", sans-serif;
+    font-weight: bold;
+    font-size: 54px;
+    font-style: normal;
+    text-align: center;
+    color: var(--nav-content__anchor-color);
+    text-decoration: none;
+    display: flex;
+    color: #ffffff;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile__btn__anchor {
+    display: none;
+  }
+}

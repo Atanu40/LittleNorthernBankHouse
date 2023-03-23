@@ -1,0 +1,62 @@
+@import "layout/header.scss";
+@import "layout/hero-slider.scss";
+@import "layout/sec03-gluten-free-goodness.scss";
+@import "layout/sec04-delicious-gluten-free-inspiration.scss";
+@import "layout/sec05-grid-img.scss";
+@import "layout/sec06-9tips-living.scss";
+@import "layout/sec07-form.scss";
+@import "layout/footer.scss";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400;1,700;1,900&family=Work+Sans:wght@500&display=swap');
+
+
+
+@font-face {
+  font-family: "Krana Fat";
+  src: url(../kranafat.woff) format('woff2');
+}
+
+@font-face {
+  font-family: "acumin-pro-condensed";
+  src: url(../l.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url(../icomoon.woff2) format('woff2');
+}
+@font-face {
+  font-family: "Mocha Mattari";
+  src: url(../392148_0_0.woff2) format('woff2');
+}
+
+
+:root {
+  --nav-content__anchor-color: #000;
+  --section-03-txt__heading-color: #0A0A0A;
+  --section-03-txt__para-color: #0A0A0A;
+  --section-04__heading-color: #0A0A0A;
+  --section-04__btn__anchor-bg-color: #a76389;
+  --section-04__btn__anchor-color: #e4e2db;
+  --section-06__heading__ancor-color: #0A0A0A;
+  --section-06__para-color: #0A0A0A;
+  --section-07-overlay-color: rgba(0, 0, 0, 0.3);
+  --footer-txt-color: #0A0A0A;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.page-width {
+  max-width: 1024px;
+  margin: auto;
+  padding-inline: 5%;
+}
+

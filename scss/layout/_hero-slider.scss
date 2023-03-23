@@ -1,0 +1,49 @@
+.flickity-viewport {
+  width: 100%;
+  //height: 100% !important;
+}
+.flickity-page-dots {
+  bottom: 51px;
+
+  @media screen and (max-width: 768px) {
+    bottom: 10px;
+  }
+}
+.carousel-cell{
+  width: 100%; 
+  height: 69vh;
+
+  @media screen and (min-width: 968px) {
+    height: 515px;
+  }
+}
+
+.carousel-parrent{
+  width: 100%; 
+  height: 69vh;
+  position: relative;
+}
+
+.carousel-child{
+  width: 69%; 
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+  right: 14%;
+
+  @media screen and (min-width: 968px) {
+    width: 49%;
+  }
+}
+
+.carousel-parrent__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-child__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

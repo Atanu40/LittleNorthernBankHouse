@@ -66,6 +66,9 @@
 .nav-content__anchor:hover + .anchorimg{
    opacity: 1;
 }
+.nav-content__anchor:active + .anchorimg{
+   opacity: 0;
+}
 
 .nav-content__btn__anchor:hover{
   text-decoration: underline;
@@ -187,7 +190,7 @@
   }
 
   .header-logo__item1 {
-    width: 80%;
+    width: 34%;
     height: 100%;
     object-fit: cover;
   }

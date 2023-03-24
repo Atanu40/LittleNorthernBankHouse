@@ -9,13 +9,20 @@
 //--------------------section-03-bg-img--------------------//
 
 .bg-img-sec03{
+  position: relative;
   // width: 100%;
-  height: 90vh;
+  height: 150vh;
 }
+.bg-img-sec03 img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .section-03__bg-img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 //--------------------section-03-txt--------------------//

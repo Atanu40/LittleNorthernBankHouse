@@ -19,6 +19,9 @@
   width: 100%;
   height: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 698px) {
     height: 290px;
@@ -32,35 +35,41 @@
 
 .section-06-img1{
   width: 95%;
-  height: 71%;
+  height: 86%;
   object-fit: contain;
   opacity: 1;
   transition: all 0.5s ease-in-out;
   position: absolute;
-  top: 50px;
-  left: 20px;
+  top: 30px;
+  left: 6px;
 
-  @media screen and (max-width: 898px) {
-    height: 67%;
-    top: 65px;
+  @media screen and (max-width: 948px) {
+    width: 81%;
   }
-  @media screen and (max-width: 460px) {
-    height: 63%;
-    width: 87%;
-    top: 75px;
+
+  @media screen and (min-width: 498px) and (max-width: 698px) {
+    width: 81%;
+    height: 83%;
+    top: 30px;
+    
   }
+  // @media screen and (max-width: 460px) {
+  //   height: 63%;
+  //   width: 87%;
+  //   top: 75px;
+  // }
 }
 
 .section-06-img2{
   position: absolute;
   //top: -172px;
-  width: 108%;
-  height: 120%;
+  width: 100%;
+ // height: 120%;
   object-fit: contain;
 
-  @media screen and (max-width: 460px) {
-    width: 100%;
-  }
+  // @media screen and (max-width: 460px) {
+  //   width: 100%;
+  // }
 }
 
 .section-06__left:hover .section-06-img{

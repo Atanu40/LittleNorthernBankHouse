@@ -1,0 +1,72 @@
+.products-section-01{
+  margin: 30px 0px;
+  background-image: url(../img/bg-page-top-02.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  //max-width: 400px;
+}
+
+.title-content{
+  max-width: 700px;
+}
+
+.title-heading{
+  font-family: "Krana Fat";
+  font-size: 23px;
+  font-weight: bold;
+  color: #0A0A0A;
+}
+
+.title-para{
+  font-family: "acumin-pro-condensed";
+  font-size: 19px;
+  color: #0A0A0A;
+}
+
+.link{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  gap: 25px;
+}
+
+.link-anchor{
+  font-family: "Krana Fat";
+  font-size: 19px;
+  font-weight: bold;
+  color: #383838;
+  text-decoration: none;
+}
+
+.link-anchor::before{
+  font-family: 'icomoon';
+  content: "";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-size: 1.57895rem;
+  margin-right: 0.52632rem;
+  vertical-align: middle;
+  color: #78BE20;
+  line-height: 1;
+  transition: all 0.5s cubic-bezier(0.49, 0.04, 0.39, 0.96);
+}
+
+.link-anchor:hover::before{
+  transform: scale(1.2);
+}

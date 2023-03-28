@@ -3,7 +3,7 @@
   //height: 100% !important;
 }
 .flickity-page-dots {
-  bottom: 51px;
+  bottom: 76px;
 
   @media screen and (max-width: 768px) {
     bottom: 10px;
@@ -14,13 +14,13 @@
   height: 69vh;
 
   @media screen and (min-width: 968px) {
-    height: 515px;
+    height: 601px;
   }
 }
 
 .carousel-parrent{
   width: 100%; 
-  height: 69vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
   width: 100%; 
   height: auto;
   position: absolute;
-  bottom: 0%;
+  bottom: 7%;
   right: 14%;
 
   @media screen and (min-width: 650px) {
@@ -56,18 +56,18 @@
   right: 29%;
 
   @media screen and (min-width: 1000px) {
-    top: 29%;
+    top: 32%;
     right: 23%;
   }
 
   @media screen and (max-width: 1130px) {
-    top: 29%;
-    right: 26%;
+    top: 40%;
+    right: 25%;
   }
 
   @media screen and (max-width: 990px) {
-    top: 28%;
-    right: 26%;
+    top: 17%;
+    right: 28%;
   }
 
   @media screen and (max-width: 890px) {
@@ -201,7 +201,7 @@
   margin-top: -5px;
 
   @media screen and (min-width: 1000px) {
-    margin-top: -54px;
+    margin-top: -59px;
   }
 }
 
@@ -223,7 +223,7 @@
 
 .carosel_special_img{
   width: 100%; 
-  height: 69vh;
+  height: 80vh;
   position: relative;
   z-index: 12;
 }

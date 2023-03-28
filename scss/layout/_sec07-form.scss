@@ -183,3 +183,13 @@
   // position: absolute;
   // top: -115px;
 }
+
+.under-section-06_page1{
+  position: relative;
+  z-index: 10000;
+  margin-top: -39px;
+
+  @media screen and (max-width: 592px) {
+    margin-top: -44px;
+  }
+}
